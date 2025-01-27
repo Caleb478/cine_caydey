@@ -20,7 +20,7 @@ def conectar():
             host="localhost",
             user="root",  # Usuario por defecto en XAMPP es "root"
             password="123456",  # Contraseña por defecto en XAMPP es vacía
-            database="dbcine"
+            database="dbcine" # Nombre de la DB
         )
         return conexion
     except mysql.connector.Error as err:
