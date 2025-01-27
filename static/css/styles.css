@@ -170,7 +170,7 @@ body.default .navbar {
 
 body.navidad .navbar {
     background: linear-gradient(90deg, #E50914, #141414);
-    color: #ffffff; /* Color de texto */
+    color: black; /* Color de texto */
 }
 
 body.halloween .navbar {
