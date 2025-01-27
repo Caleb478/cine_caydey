@@ -102,6 +102,10 @@ def admin_usuarios():
     if 'usuario' not in session:
         return redirect('/login')
     return render_template('usuarios.html')
+# Semanas
+@app.route('/semanas')
+def semanas():
+    return render_template('semanas.html')
 
 @app.route('/')
 def home():

@@ -1,0 +1,498 @@
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://cinembrollos.com/wp-content/uploads/2014/10/interstellar_ver7_xlg.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+	color: #000;
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas {
+	margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Flechas ----- ----- ----- */
+
+
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel {
+		overflow: visible;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+	}
+}
+
+
+
+
+/* Personaliza la barra de desplazamiento */
+
+.peliculas-recomendadas .contenedor-carousel {
+    width: 100%;
+    padding: 20px 0;
+    overflow-x: auto; /* Mantiene el scroll visible */
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    
+    /* Personaliza la barra de desplazamiento */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.7) rgba(50, 50, 50, 0.3);
+}
+
+/* Estilo para navegadores basados en WebKit (Chrome, Edge, Safari) */
+.peliculas-recomendadas .contenedor-carousel::-webkit-scrollbar {
+    height: 10px; /* Grosor del scroll */
+}
+
+.peliculas-recomendadas .contenedor-carousel::-webkit-scrollbar-track {
+    background: rgba(50, 50, 50, 0.3); /* Color del fondo */
+    border-radius: 10px;
+}
+
+.peliculas-recomendadas .contenedor-carousel::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.7); /* Color del scroll */
+    border-radius: 10px;
+}
+
+/* Efecto al pasar el mouse sobre el scroll */
+.peliculas-recomendadas .contenedor-carousel::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Carrusel de películas */
+.peliculas-recomendadas .contenedor-carousel .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+/* Modificacion Semanas */
+* {
+	box-sizing: border-box;
+  }
+  
+  html, body {
+	height: 100%;
+	min-height: 600px;
+  }
+  
+  body {
+	background-color: #222224;
+	background-image: linear-gradient(#17191f, #252a35);
+	height: 100%;
+	font-family: 'roboto', 'helvetica neue', arial, sans-serif;
+  }
+  
+  .carousel {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+	margin: 0 auto;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel:hover .slide:after,
+  .carousel:hover .counter,
+  .carousel:hover .slide:before {
+	opacity: 1;
+  }
+  
+  .slide {
+	float: right;
+	position: absolute;
+	z-index: 1;
+	width: 600px;
+	height: 400px;
+	background-color: #eee;
+	text-align: center;
+	transition: opacity 0.4s;
+	opacity: 1;
+  }
+  
+  .slide:before {
+	content: attr(annot);
+	display: block;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 14px;
+	font-weight: 300;
+	z-index: 12;
+	opacity: 0;
+	transition: opacity 0.3s;
+	text-shadow: 0 0 1px black;
+  }
+  
+  .slide:after {
+	content: attr(slide);
+	display: block;
+	position: absolute;
+	bottom: 0;
+	transition: opacity 0.3s;
+	width: 100%;
+	height: 80px;
+	opacity: 0;
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+	text-align: left;
+	text-indent: 549px;
+	line-height: 101px;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.9);
+	text-shadow: 0 0 1px black;
+  }
+  
+  .counter {
+	position: absolute;
+	bottom: 20px;
+	right: 1px;
+	height: 20px;
+	width: 60px;
+	z-index: 2;
+	text-align: center;
+	color: #fff;
+	line-height: 21px;
+	font-size: 13px;
+	opacity: 0;
+	transition: opacity 0.3s;
+  }
+  
+  .faux-ui-facia {
+	top: 0;
+	right: 0;
+	float: right;
+	position: absolute;
+	margin-top: 0;
+	z-index: 9;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+  }
+  
+  .faux-ui-facia:checked {
+	z-index: 8;
+  }
+  
+  .faux-ui-facia:checked + .slide {
+	opacity: 0;
+  }
+  
+  .faux-ui-facia:nth-child(1):checked {
+	z-index: 9;
+  }
+  
+  .faux-ui-facia:nth-child(1):checked + .slide {
+	opacity: 1;
+  }
+  
+  .faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia {
+	float: left;
+	z-index: 8;
+  }
+  
+  .faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia + .slide {
+	opacity: 0;
+  }
+  
+  .faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked {
+	z-index: 9;
+  }
+  
+  .faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked + .slide {
+	opacity: 1;
+  }
+  
+  /* --- Intro text --- */
+  .intro {
+	padding: 80px 0 60px 0;
+	text-align: center;
+	color: #fff;
+	margin: auto;
+	width: 800px;
+  }
+  
+  .intro__title {
+	font-weight: 200;
+	font-size: 32px;
+	color: #fff;
+  }
+  
+  .intro__body {
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	opacity: 0.48;
+	padding: 0 160px;
+	margin: 0;
+  }
+  
+
+  body {
+	height: 600px;
+	margin: 0;
+	display: grid;
+	grid-template-rows: 500px 100px;
+	grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+	align-items: center;
+	justify-items: center;
+  }
+  
+  main#carousel {
+	grid-row: 1 / 2;
+	grid-column: 1 / 8;
+	width: 100vw;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	transform-style: preserve-3d;
+	perspective: 600px;
+	--items: 5;
+	--middle: 3;
+	--position: 1;
+	pointer-events: none;
+  }
+  
+  div.item {
+	position: absolute;
+	width: 300px;
+	height: 400px;
+	background-color: coral;
+	--r: calc(var(--position) - var(--offset));
+	--abs: max(calc(var(--r) * -1), var(--r));
+	transition: all 0.25s linear;
+	transform: rotateY(calc(-10deg * var(--r)))
+	  translateX(calc(-300px * var(--r)));
+	z-index: calc((var(--position) - var(--abs)));
+  }
+  
+  div.item:nth-of-type(1) {
+	--offset: 1;
+	background-color: #90f1ef;
+  }
+  div.item:nth-of-type(2) {
+	--offset: 2;
+	background-color: #ff70a6;
+  }
+  div.item:nth-of-type(3) {
+	--offset: 3;
+	background-color: #ff9770;
+  }
+  div.item:nth-of-type(4) {
+	--offset: 4;
+	background-color: #ffd670;
+  }
+  div.item:nth-of-type(5) {
+	--offset: 5;
+	background-color: #e9ff70;
+  }
+  
+  input:nth-of-type(1) {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+  }
+  input:nth-of-type(1):checked ~ main#carousel {
+	--position: 1;
+  }
+  
+  input:nth-of-type(2) {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+  }
+  input:nth-of-type(2):checked ~ main#carousel {
+	--position: 2;
+  }
+  
+  input:nth-of-type(3) {
+	grid-column: 4 /5;
+	grid-row: 2 / 3;
+  }
+  input:nth-of-type(3):checked ~ main#carousel {
+	--position: 3;
+  }
+  
+  input:nth-of-type(4) {
+	grid-column: 5 / 6;
+	grid-row: 2 / 3;
+  }
+  input:nth-of-type(4):checked ~ main#carousel {
+	--position: 4;
+  }
+  
+  input:nth-of-type(5) {
+	grid-column: 6 / 7;
+	grid-row: 2 / 3;
+  }
+  input:nth-of-type(5):checked ~ main#carousel {
+	--position: 5;
+  }

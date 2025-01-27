@@ -5,58 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cine App</title>
     <link rel="stylesheet" href="../static/css/styles.css">
-    
     <link rel="stylesheet" href="../static/css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-          <!-- Botón de menú hamburguesa -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <!-- Logotipo centrado -->
-          <a class="navbar-brand mx-auto" href="#">
-            <img src="../static/images/l3.jpeg" alt="CayDey" height="40"> <!-- Cambia "logo.png" por tu logo -->
-          </a>
-      
-          <!-- Menú de navegación alineado a la izquierda -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Candy Bar</a></li>
-              <li class="nav-item"><a class="nav-link" href="/semanas">¡Febrero es el mes del cine!</a></li>
-            </ul>
-          </div>
-      
-          <!-- Íconos alineados a la derecha -->
-          <div class="d-flex">
-            <a class="nav-link me-3" href="#"><i class="bi bi-search"></i></a> <!-- Ícono de búsqueda -->
-            <a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a> <!-- Ícono de usuario -->
-          </div>
+            <a class="navbar-brand" href="#">CineApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Candy Bar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Iniciar Sesión</a></li>
+
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
+    <div>
+        <div class="pelicula-principal2" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="contenedor" >
+                <h3 class="titulo">&emsp;¡Febrero es el mes del cine!</h3>
+                <p class="descripcion">
+                    &emsp;&emsp;&emsp;&emsp; Desde clásicos que te harán recordar, hasta distopías que te harán cuestionar todo. Ciencia ficción, dramas y películas de culto completan la aventura. ¿Estás listo para descubrir qué universo esconde tu próxima película favorita?"
+                </p>
 
-    <div class="pelicula-principal">
-        <div class="contenedor">
-            <h3 class="titulo">Interestellar</h3>
-            <p class="descripcion">
-                Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.
-            </p>
-
+            </div>
         </div>
-    </div>
-
-
     <main>
 
 
         <div class="peliculas-recomendadas contenedor">
             <div class="contenedor-titulo-controles">
-                <h3><strong>Descubrimientos cinematográficos</strong></h3>
+                      <h3>&emsp;Clásicos del Cine (Antes de 1990) &emsp; &emsp; Del 2 al 9 de febrero</h3>
                 <div class="indicadores"></div>
             </div>
 
@@ -65,25 +50,25 @@
                 <div class="contenedor-carousel">
                     <div class="carousel">
                         <div class="pelicula">
-                                <img src="../static/images/1.png" alt="Pelicula 1" data-id="1" class="pelicula-img">
+                                <img src="../static/images/10.jpg" alt="Pelicula 10" data-id="10" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/2.png" alt="Pelicula 2" data-id="2" class="pelicula-img">
+                                <img src="../static/images/12.jpg" alt="Pelicula 12" data-id="12" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/3.png" alt="Pelicula 3" data-id="3" class="pelicula-img">
+                                <img src="../static/images/33.jpg" alt="Pelicula 33" data-id="33" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/4.png" alt="Pelicula 4" data-id="4" class="pelicula-img">
+                                <img src="../static/images/35.jpg" alt="Pelicula 35" data-id="35" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/5.png" alt="Pelicula 5" data-id="5" class="pelicula-img">
+                                <img src="../static/images/38.jpg" alt="Pelicula 38" data-id="38" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/6.png" alt="Pelicula 6" data-id="6" class="pelicula-img">
+                                <img src="../static/images/42.jpg" alt="Pelicula 42" data-id="42" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/7.png" alt="Pelicula 7" data-id="7" class="pelicula-img">
+                                <img src="../static/images/39.jpg" alt="Pelicula 39" data-id="39" class="pelicula-img">
                         </div>
                     </div>
                 </div>
@@ -94,7 +79,7 @@
 
         <div class="peliculas-recomendadas contenedor">
             <div class="contenedor-titulo-controles">
-                <h3><strong>Joyas ocultas</strong></h3>
+                      <h3>&emsp; Cine Moderno (1990 - 2010) &emsp; &emsp; Del 10 al 16 de febrero   </h3>
                 <div class="indicadores"></div>
             </div>
 
@@ -102,25 +87,25 @@
                 <button role="button" id="flecha-izquierda-2" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>                <div class="contenedor-carousel">
                     <div class="carousel">
                         <div class="pelicula">
-                                <img src="../static/images/8.jpg" alt="Pelicula 8" data-id="8" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/9.jpeg" alt="Pelicula 9" data-id="9" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/10.jpg" alt="Pelicula 10" data-id="10" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
                                 <img src="../static/images/11.jpg" alt="Pelicula 11" data-id="11" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/12.jpg" alt="Pelicula 12" data-id="12" class="pelicula-img">
                         </div>
                         <div class="pelicula">
                                 <img src="../static/images/13.jpg" alt="Pelicula 13" data-id="13" class="pelicula-img">
                         </div>
                         <div class="pelicula">
                                 <img src="../static/images/14.jpg" alt="Pelicula 14" data-id="14" class="pelicula-img">
+                        </div>
+                        <div class="pelicula">
+                                <img src="../static/images/15.jpg" alt="Pelicula 15" data-id="15" class="pelicula-img">
+                        </div>
+                        <div class="pelicula">
+                                <img src="../static/images/16.jpg" alt="Pelicula 16" data-id="16" class="pelicula-img">
+                        </div>
+                        <div class="pelicula">
+                                <img src="../static/images/19.jpg" alt="Pelicula 19" data-id="19" class="pelicula-img">
+                        </div>
+                        <div class="pelicula">
+                                <img src="../static/images/31.jpg" alt="Pelicula 31" data-id="31" class="pelicula-img">
                         </div>
                     </div>
                     <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar Boletos</button>
@@ -130,7 +115,7 @@
 
         <div class="peliculas-recomendadas contenedor">
             <div class="contenedor-titulo-controles">
-                <h3><strong>Cine que te sorprenderá</strong></h3>
+                      <h3>&emsp; Ciencia Ficción y Distopías &emsp; &emsp; Del 17 al 23 de febrero </h3>
                 <div class="indicadores"></div>
             </div>
 
@@ -138,10 +123,13 @@
                 <button role="button" id="flecha-izquierda-2" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>                <div class="contenedor-carousel">
                     <div class="carousel">
                         <div class="pelicula">
-                                <img src="../static/images/15.jpg" alt="Pelicula 15" data-id="15" class="pelicula-img">
+                                <img src="https://www.originalfilmart.com/cdn/shop/products/interstellar_2014_advance_original_film_art_682852f2-23f6-46de-a1db-4029d5b6f0b4_5000x.jpg?v=1574284010" alt="Pelicula 15" data-id="15" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/16.jpg" alt="Pelicula 16" data-id="16" class="pelicula-img">
+                                <img src="https://m.media-amazon.com/images/I/719Po3Wco0L._AC_UF894,1000_QL80_.jpg" alt="Pelicula 16" data-id="16" class="pelicula-img">
+                        </div>
+                        <div class="pelicula">
+                                <img src="https://lh4.googleusercontent.com/proxy/UdJYcWXf-SP3NfAJzl969FWbwC_yfKkcx-dzrT7Nia_4g6BckpL0jY0ymAcmA1bVNQpj8KqrgMPRG_FR0kriYyAozD6ixfV_u_MleA" alt="Pelicula 17" data-id="17" class="pelicula-img">
                         </div>
                         <div class="pelicula">
                                 <img src="../static/images/17.jpg" alt="Pelicula 17" data-id="17" class="pelicula-img">
@@ -150,13 +138,10 @@
                                 <img src="../static/images/18.jpg" alt="Pelicula 18" data-id="18" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/19.jpg" alt="Pelicula 19" data-id="19" class="pelicula-img">
+                                <img src="../static/images/22.jpg" alt="Pelicula 22" data-id="22" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/20.jpg" alt="Pelicula 20" data-id="20" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/21.jpeg" alt="Pelicula 21" data-id="21" class="pelicula-img">
+                                <img src="../static/images/36.jpg" alt="Pelicula 36" data-id="36" class="pelicula-img">
                         </div>
                     </div>
                     <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar Boletos</button>
@@ -166,7 +151,7 @@
 
         <div class="peliculas-recomendadas contenedor">
             <div class="contenedor-titulo-controles">
-                <h3><strong>Películas que no te puedes perder</strong></h3>
+                      <h3>&emsp; Dramas y Películas de Culto &emsp; &emsp; Del 24 al 28 de febrero </h3>
                 <div class="indicadores"></div>
             </div>
 
@@ -174,10 +159,10 @@
                 <button role="button" id="flecha-izquierda-2" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>                <div class="contenedor-carousel">
                     <div class="carousel">
                         <div class="pelicula">
-                                <img src="../static/images/22.jpg" alt="Pelicula 22" data-id="22" class="pelicula-img">
+                                <img src="https://m.media-amazon.com/images/S/pv-target-images/a2681be0e6f5ea318048215a88cc23db7e84ea52bc046798e64a28aaea2ffd64.jpg" alt="Pelicula 22" data-id="22" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/23.jpg" alt="Pelicula 23" data-id="23" class="pelicula-img">
+                                <img src="../static/images/9.jpeg" alt="Pelicula 9" data-id="9" class="pelicula-img">
                         </div>
                         <div class="pelicula">
                                 <img src="../static/images/24.jpg" alt="Pelicula 24" data-id="24" class="pelicula-img">
@@ -192,124 +177,19 @@
                                 <img src="../static/images/27.jpg" alt="Pelicula 27" data-id="27" class="pelicula-img">
                         </div>
                         <div class="pelicula">
-                                <img src="../static/images/28.jpg" alt="Pelicula 28" data-id="28" class="pelicula-img">
-                        </div>
-                    </div>
-                    <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar Boletos</button>
-                </div>
-                <button role="button" id="flecha-derecha-2" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>            </div>
-        </div>
-
-        <div class="peliculas-recomendadas contenedor">
-            <div class="contenedor-titulo-controles">
-                <h3><strong>Aventuras en la pantalla grande</strong></h3>
-                <div class="indicadores"></div>
-            </div>
-
-            <div class="contenedor-principal"id="contenedor-carousel-2">
-                <button role="button" id="flecha-izquierda-2" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>                <div class="contenedor-carousel">
-                    <div class="carousel">
-                        <div class="pelicula">
-                                <img src="../static/images/29.jpg" alt="Pelicula 29" data-id="29" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/30.jpg" alt="Pelicula 30" data-id="30" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/31.jpg" alt="Pelicula 31" data-id="31" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/32.jpg" alt="Pelicula 32" data-id="32" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/33.jpg" alt="Pelicula 33" data-id="33" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
                                 <img src="../static/images/34.jpg" alt="Pelicula 34" data-id="34" class="pelicula-img">
                         </div>
-                        <div class="pelicula">
-                                <img src="../static/images/35.jpg" alt="Pelicula 35" data-id="35" class="pelicula-img">
-                        </div>
                     </div>
                     <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar Boletos</button>
                 </div>
                 <button role="button" id="flecha-derecha-2" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>            </div>
         </div>
 
-        <div class="peliculas-recomendadas contenedor">
-            <div class="contenedor-titulo-controles">
-                <h3><strong>Historias que te conmoveráns</strong></h3>
-                <div class="indicadores"></div>
-            </div>
-
-            <div class="contenedor-principal"id="contenedor-carousel-2">
-                <button role="button" id="flecha-izquierda-2" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>                <div class="contenedor-carousel">
-                    <div class="carousel">
-                        <div class="pelicula">
-                                <img src="../static/images/36.jpg" alt="Pelicula 36" data-id="36" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/37.jpg" alt="Pelicula 37" data-id="37" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/38.jpg" alt="Pelicula 38" data-id="38" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/39.jpg" alt="Pelicula 39" data-id="39" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/40.jpg" alt="Pelicula 40" data-id="40" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/41.jpg" alt="Pelicula 41" data-id="41" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/42.jpg" alt="Pelicula 42" data-id="42" class="pelicula-img">
-                        </div>
-                    </div>
-                    <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar Boletos</button>
-                </div>
-                <button role="button" id="flecha-derecha-2" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>            </div>
-        </div>
-
-        <div class="peliculas-recomendadas contenedor">
-            <div class="contenedor-titulo-controles">
-                <h3><strong>El cine como nunca lo habías visto</strong></h3>
-                <div class="indicadores"></div>
-            </div>
-
-            <div class="contenedor-principal"id="contenedor-carousel-2">
-                <button role="button" id="flecha-izquierda-2" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>                <div class="contenedor-carousel">
-                    <div class="carousel">
-                        <div class="pelicula">
-                                <img src="../static/images/43.jpg" alt="Pelicula 43" data-id="43" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/44.jpeg" alt="Pelicula 44" data-id="44" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/45.jpg" alt="Pelicula 45" data-id="45" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/46.jpg" alt="Pelicula 46" data-id="46" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/47.jpg" alt="Pelicula 47" data-id="47" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/48.jpeg" alt="Pelicula 48" data-id="48" class="pelicula-img">
-                        </div>
-                        <div class="pelicula">
-                                <img src="../static/images/49.jpg" alt="Pelicula 49" data-id="49" class="pelicula-img">
-                        </div>
-                    </div>
-                    <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar Boletos</button>
-                </div>
-                <button role="button" id="flecha-derecha-2" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>         </div>
-        </div>
     </main>
 
     <!-- Modal Bootstrap -->
+<!-- Modal Bootstrap -->
+<!-- Modal Bootstrap -->
 <!-- Modal Bootstrap -->
 <!-- Modal Bootstrap -->
 <div class="modal fade custom-modal" id="modalPelicula" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
@@ -344,8 +224,9 @@
         </div>
     </div>
 </div>
+
+    
   
-  <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar Boletos</button> 
   <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -376,33 +257,7 @@
               <input type="text" id="precioTotal" class="form-control" readonly>
             </div>
             <button type="submit" class="btn btn-primary">Confirmar Compra</button>
-            
           </form>
-          <button type="button" class="btn btn-secondary mt-3" data-bs-toggle="modal" data-bs-target="#modalMetodoPago">
-            Método de Pago
-        </button>
-        
-        <div class="modal fade" id="modalMetodoPago" tabindex="-1" aria-labelledby="modalMetodoPagoLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalMetodoPagoLabel">Método de Pago</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="formMetodoPago">
-                            <div class="mb-3">
-                                <label for="numeroTarjeta" class="form-label">Número de Tarjeta:</label>
-                                <input type="text" class="form-control" id="numeroTarjeta" placeholder="1234 5678 9012 3456" required>
-                            </div>
-                            <button type="submit" class="btn btn-success">Confirmar Pago</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
         </div>
       </div>
     </div>
@@ -457,9 +312,6 @@
         });
     });
 </script>
-
-    
-
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="../static/js/main.js"></script>

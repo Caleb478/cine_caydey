@@ -1,51 +1,3 @@
-:root {
-	--rojo: #E50914;
-	--fondo: #141414;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	background: #AAA;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.contenedor {
-	width: 90%;
-	margin: auto;
-}
-
-header {
-	padding: 30px 0;
-}
-
-header .contenedor {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-header .logotipo {
-	font-family: 'Bebas Neue', cursive;
-	font-weight: normal;
-	color: var(--rojo);
-	font-size: 40px;
-}
-
-header nav a {
-	color: #AAA;
-	text-decoration: none;
-	margin-right: 20px;
-}
-
-header nav a:hover,
-header nav a.activo {
-	color: #FFF;
-}
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
 .pelicula-principal {
@@ -98,6 +50,66 @@ header nav a.activo {
 
 .pelicula-principal .boton i {
 	margin-right: 1.25em;
+}
+
+/* ---- ----- ----- Pelicula Principal 2----- ----- ----- */
+.pelicula-principal2 {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://i.blogs.es/6d24bc/ready-player-one/1366_2000.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal2 .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+	margin: 100px;
+}
+
+.pelicula-principal2 .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal2 .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+	color: #000;
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
 }
 
 /* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */

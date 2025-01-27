@@ -121,7 +121,7 @@ a:hover {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: black;
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
@@ -136,23 +136,23 @@ a:hover {
 /*para propuesta de valor*/
 /* temporada */
 body.default {
-    background-color: #ffffff; /* Fondo por defecto */
-    color: #2736DB; /* Color de letra */
-    font-family: 'Arial', sans-serif; /* Tipo de letra por defecto */
+    background-color: #ffffff83; /* Fondo por defecto */
+    color: #000000; /* Color de letra */
+    font-family:'Courier New', monospace; /* Tipo de letra por defecto */
 }
 
 body.navidad {
     background: url('/static/images/n3.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #ffffff; /* Color de letra */
-    font-family: 'Verdana', sans-serif; /* Tipo de letra Navidad */
+    color: #000000; /* Color de letra */
+    font-family:'Courier New', monospace; /* Tipo de letra por defecto */
 }
 
 body.halloween {
     background: url('/static/images/h3.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #C376DB; /* Color de letra */
-    font-family: 'Courier New', monospace; /* Tipo de letra Halloween */
+    color: #ffffff; /* Color de letra */
+    font-family:'Courier New', monospace; /* Tipo de letra por defecto */
 }
 
 body.verano {
@@ -164,28 +164,28 @@ body.verano {
 
 /* Navbar por temporada */
 body.default .navbar {
-    background: linear-gradient(90deg, #48CEDB, #2780DB);
-    color: #ffffff; /* Color de texto */
+    background: linear-gradient(90deg, #ffffff, #aabbcb);
+    color: #000000; /* Color de texto */
 }
 
 body.navidad .navbar {
-    background: linear-gradient(90deg, #E50914, #141414);
-    color: black; /* Color de texto */
+    background: linear-gradient(90deg, #fe7c82, #ffffff, #9aa5a6);
+    color: #ffffff; /* Color de texto */
 }
 
 body.halloween .navbar {
-    background: linear-gradient(90deg, #682CDB, #2736DB);
+    background: linear-gradient(90deg, #f2bf58, #ffffff, #9aa5a6);
     color: #ffffff; /* Color de texto */
 }
 
 body.verano .navbar {
-    background: linear-gradient(90deg, #48CEDB, #C376DB);
+    background: linear-gradient(90deg, #e64c54, #eee16a, #5ff061);
     color: #ffffff; /* Color de texto */
 }
 
 /* Texto de navegación por temporada */
 body.default .navbar a {
-    color: #ffffff;
+    color: #000000;
 }
 
 body.navidad .navbar a {
@@ -225,4 +225,9 @@ body.halloween h3 {
 body.verano h3 {
     font-family: 'Times New Roman', serif;
     color: #ffffff;
+}
+
+main {
+
+    margin: 100px;
 }
