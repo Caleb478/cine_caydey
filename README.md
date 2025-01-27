@@ -3,13 +3,16 @@
 1. primero instalar :
 ´´´´sh
     $ python -m venv venv
+
+   
 ´´´
-luego se activa con:
+----------------------
+2. luego se activa con:
 
 ´´´
 /venv/Scripts/Activate
 ´´´
-
+-----------------------
 3. instalar los requiremenst
 
 ´´´´
