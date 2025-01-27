@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f975;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #48CEDB, #2780DB);
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-center .btn-lg {
+    background: linear-gradient(90deg, #2780DB, #48CEDB);
+    color: rgb(9, 0, 0);
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.text-center .btn-lg:hover {
+    background: #48CEDB;
+    color: black;
+}
+
+
+
+footer {
+    background-color: #2736DB;
+}
+
+footer a {
+    text-decoration: none;
+    color: #C376DB;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+.card {
+    border-radius: 10px;
+    background-color: #f4f4f9;
+}
+
+.card-header {
+    background: linear-gradient(90deg, #48CEDB, #2780DB);
+    color: white;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+a {
+    color: #2780DB;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #682CDB;
+}
+
+
+.modal-content {
+    border-radius: 10px;
+    background-color: #f4f4f9;
+}
+
+.modal-header {
+    background: linear-gradient(90deg, #48CEDB, #2780DB);
+    color: rgba(255, 255, 255, 0.153);
+}
+
+.modal-content {
+    border-radius: 10px;
+    background-color: #f4f4f9; /* Color de fondo */
+}
+
+.modal-header {
+    background: linear-gradient(90deg, #48CEDB, #2780DB);
+    color: white;
+}
+
+.modal-body h6 {
+    color: #2780DB; /* Color para el título de la película */
+}
+
+.modal-body ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0;
+    color: #682CDB; /* Color para las sesiones */
+}
+
+.modal-body ul li {
+    margin: 5px 0; /* Espaciado entre sesiones */
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se muevan a la siguiente línea si no hay suficiente espacio */
+    justify-content: center; /* Centra los botones en el contenedor */
+    margin: 20px; /* Opcional: Espaciado alrededor del contenedor */
+}
+
+.text-center {
+    margin: 10px; /* Espaciado entre los botones */
+}
+
+/*codigo aumentado 19/1/25*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.btn-primary {
+    background-color: #48CEDB; 
+    color: white; 
+}
+
+/*para propuesta de valor*/
+/* temporada */
+body.default {
+    background-color: #ffffff; /* Fondo por defecto */
+    color: #2736DB; /* Color de letra */
+    font-family: 'Arial', sans-serif; /* Tipo de letra por defecto */
+}
+
+body.navidad {
+    background: url('/static/images/n3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff; /* Color de letra */
+    font-family: 'Verdana', sans-serif; /* Tipo de letra Navidad */
+}
+
+body.halloween {
+    background: url('/static/images/h3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #C376DB; /* Color de letra */
+    font-family: 'Courier New', monospace; /* Tipo de letra Halloween */
+}
+
+body.verano {
+    background: url('/static/images/b3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #682CDB; /* Color de letra */
+    font-family: 'Times New Roman', serif; /* Tipo de letra Verano */
+}
+
+/* Navbar por temporada */
+body.default .navbar {
+    background: linear-gradient(90deg, #48CEDB, #2780DB);
+    color: #ffffff; /* Color de texto */
+}
+
+body.navidad .navbar {
+    background: linear-gradient(90deg, #E50914, #141414);
+    color: #ffffff; /* Color de texto */
+}
+
+body.halloween .navbar {
+    background: linear-gradient(90deg, #682CDB, #2736DB);
+    color: #ffffff; /* Color de texto */
+}
+
+body.verano .navbar {
+    background: linear-gradient(90deg, #48CEDB, #C376DB);
+    color: #ffffff; /* Color de texto */
+}
+
+/* Texto de navegación por temporada */
+body.default .navbar a {
+    color: #ffffff;
+}
+
+body.navidad .navbar a {
+    color: #ffffff;
+}
+
+body.halloween .navbar a {
+    color: #ffffff;
+}
+
+body.verano .navbar a {
+    color: #ffffff;
+}
+
+body.default .navbar a:hover,
+body.navidad .navbar a:hover,
+body.halloween .navbar a:hover,
+body.verano .navbar a:hover {
+    color: #ffffff;
+}
+
+/* Cambia el tipo de letra de los elementos <h3> según la temporada */
+body.default h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+body.navidad h3 {
+    font-family: 'Verdana', sans-serif;
+    color: #ffffff;
+}
+
+body.halloween h3 {
+    font-family: 'Courier New', monospace;
+    color: #ffffff;
+}
+
+body.verano h3 {
+    font-family: 'Times New Roman', serif;
+    color: #ffffff;
+}
