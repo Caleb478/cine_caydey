@@ -308,6 +308,29 @@
                 <button role="button" id="flecha-derecha-2" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>         </div>
         </div>
     </main>
+    <button type="button" class="btn btn-secondary mt-3" data-bs-toggle="modal" data-bs-target="#modalMetodoPago">
+        Método de Pago
+    </button>
+    
+    <div class="modal fade" id="modalMetodoPago" tabindex="-1" aria-labelledby="modalMetodoPagoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMetodoPagoLabel">Método de Pago</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formMetodoPago">
+                        <div class="mb-3">
+                            <label for="numeroTarjeta" class="form-label">Número de Tarjeta:</label>
+                            <input type="text" class="form-control" id="numeroTarjeta" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Confirmar Pago</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Bootstrap -->
 <!-- Modal Bootstrap -->
@@ -378,29 +401,6 @@
             <button type="submit" class="btn btn-primary">Confirmar Compra</button>
             
           </form>
-          <button type="button" class="btn btn-secondary mt-3" data-bs-toggle="modal" data-bs-target="#modalMetodoPago">
-            Método de Pago
-        </button>
-        
-        <div class="modal fade" id="modalMetodoPago" tabindex="-1" aria-labelledby="modalMetodoPagoLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalMetodoPagoLabel">Método de Pago</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="formMetodoPago">
-                            <div class="mb-3">
-                                <label for="numeroTarjeta" class="form-label">Número de Tarjeta:</label>
-                                <input type="text" class="form-control" id="numeroTarjeta" placeholder="1234 5678 9012 3456" required>
-                            </div>
-                            <button type="submit" class="btn btn-success">Confirmar Pago</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
         
         
         </div>
