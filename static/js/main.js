@@ -224,18 +224,34 @@ setInterval(changeBackground, 60000);
 
 //codigo agregado 27/1/25
 document.addEventListener("DOMContentLoaded", function () {
+    // Formulario de Método de Pago
     const formMetodoPago = document.getElementById("formMetodoPago");
 
-    // Prueba básica para el evento del formulario
     formMetodoPago.addEventListener("submit", function (e) {
         e.preventDefault();
-        alert("Formulario enviado correctamente.");
+
+        // Obtener datos del formulario
+        const numeroTarjeta = document.getElementById("numeroTarjeta").value;
+        const nombreTitular = document.getElementById("nombreTitular").value;
+        const fechaExpiracion = document.getElementById("fechaExpiracion").value;
+        const cvv = document.getElementById("cvv").value;
+
+        if (!numeroTarjeta || !nombreTitular || !fechaExpiracion || !cvv) {
+            alert("Por favor, completa todos los campos.");
+            return;
+        }
+
+        // Simular confirmación de pago
+        alert(`Pago confirmado con la tarjeta terminada en ${numeroTarjeta.slice(-4)}.`);
+        const modalMetodoPago = bootstrap.Modal.getInstance(document.getElementById("modalMetodoPago"));
+        modalMetodoPago.hide();
     });
 
-    // Comentar QR temporalmente para depuración
-    // const qrCode = document.getElementById("qrCode");
-    // const qrValue = "https://cineapp.com/pago";
-    // qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(qrValue)}`;
+    // Generar QR automáticamente (si se requiere en el futuro)
+    const qrCode = document.getElementById("qrCode");
+    const qrValue = "https://cineapp.com/pago"; // Valor de ejemplo para el QR
+    qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(qrValue)}`;
 });
+
 
 

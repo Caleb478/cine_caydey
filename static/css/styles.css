@@ -151,7 +151,7 @@ body.navidad {
 body.halloween {
     background: url('/static/images/h3.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #ffffff; /* Color de letra */
+    color: green; /* Color de letra */
     font-family:'Courier New', monospace; /* Tipo de letra por defecto */
 }
 

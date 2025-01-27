@@ -1,5 +1,6 @@
 from locust import HttpUser, task, between
 
+# FUNCION PARA LA PRUEBA DE TESTING
 class CineAppUser(HttpUser):
     wait_time = between(1, 5)  # Espera entre 1 y 5 segundos entre tareas
 

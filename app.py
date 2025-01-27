@@ -26,30 +26,7 @@ def conectar():
     except mysql.connector.Error as err:
         print(f"Error: {err}")
         return None
-'''
-# Ruta para login
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        usuario = request.form['usuario']
-        contrasena = request.form['contrasena']
-
-        conexion = conectar()
-        cursor = conexion.cursor(dictionary=True)
-        query = "SELECT * FROM Usuarios WHERE Usuario = %s AND Contrasena = %s"
-        cursor.execute(query, (usuario, contrasena))
-        user = cursor.fetchone()
-        cursor.close()
-        conexion.close()
-
-        if user:
-            session['usuario'] = user['Usuario']
-            return redirect('/')
-        else:
-            flash('Usuario o contraseña incorrectos')
-            return redirect('/login')
-    return render_template('login.html')
-'''
+# para el login funcion
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -82,7 +59,8 @@ def login():
 def admin():
     if 'usuario' not in session:
         return redirect('/login')
-    return render_template('admin.html')  # Asegúrate de que admin.html esté en la carpeta templatess
+    return render_template('admin.html') 
+
 #para sesiones
 @app.route('/admin/sesiones')
 def admin_sesiones():
@@ -111,7 +89,7 @@ def semanas():
 def home():
     return render_template('index.html')
 
-#idpelicula
+#para obtener peliculas
 @app.route('/pelicula/<int:idPelicula>')
 def obtener_pelicula(idPelicula):
     conexion = conectar()
@@ -142,7 +120,7 @@ def obtener_sesiones(idPelicula):
         for key, value in sesion.items():
             if isinstance(value, timedelta):
                 sesion[key] = str(value)  # Convertir a formato HH:MM:SS
-                # O usa `sesion[key] = value.total_seconds()` si quieres los segundos totales
+                # O usa `sesion[key] = value.total_seconds()`
 
     cursor.close()
     conexion.close()
@@ -558,7 +536,9 @@ def reporte7():
     os.remove(temp_file_path)
 
     return send_file(pdf_path, as_attachment=True)
+
 # codigo aumentado 19/1/25
+
 @app.route('/obtener_peliculas', methods=['GET'])
 def obtener_peliculas():
     conexion = conectar()
@@ -601,6 +581,7 @@ def obtener_butacas(idSala):
     conexion.close()
     return jsonify(butacas)
 
+# FUNCION PARA REALIZAR LA COMPRA
 @app.route('/realizar_compra', methods=['POST'])
 def realizar_compra():
     datos = request.json
@@ -630,6 +611,7 @@ def realizar_compra():
     return jsonify({"mensaje": "Compra realizada con éxito.", "precio_total": precio_total})
 
 # codigo hoy 22/1/25
+# CRUD DE PELICULAS
 @app.route('/api/peliculas', methods=['GET'])
 def get_peliculas():
     conexion = conectar()
@@ -868,31 +850,7 @@ def delete_usuario(id):
 def dashboard():
     return render_template('dashboard.html')
 
-'''
-# API para datos del dashboard
-@app.route('/api/dashboard-data')
-def dashboard_data():
-    # Datos simulados
-    data = {
-        "ventas_totales": {
-            "meses": ["Enero", "Febrero", "Marzo", "Abril"],
-            "valores": [1000, 2000, 1500, 3000]
-        },
-        "generos": {
-            "labels": ["Acción", "Drama", "Comedia", "Terror"],
-            "valores": [120, 90, 140, 70]
-        },
-        "clasificacion": {
-            "labels": ["G", "PG-13", "R"],
-            "valores": [50, 100, 70]
-        },
-        "ocupacion_salas": {
-            "labels": ["Sala 1", "Sala 2", "Sala 3"],
-            "valores": [80, 65, 90]
-        }
-    }
-    return jsonify(data)
-'''
+# FUNCION PARA EL DASHBOARD
 @app.route('/api/dashboard-data')
 def dashboard_data():
     connection = conectar()
