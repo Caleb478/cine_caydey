@@ -85,6 +85,11 @@ def admin_usuarios():
 def semanas():
     return render_template('semanas.html')
 
+# Candy
+@app.route('/candy')
+def candy():
+    return render_template('candybar.html')
+
 @app.route('/')
 def home():
     return render_template('index.html')
